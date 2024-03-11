@@ -3,6 +3,7 @@ from sklearn.tree import DecisionTreeClassifier
 #from sklearn.model_selection import train_test_split
 #from sklearn.metrics import accuracy_score
 
+print("Loading data...")
 data = pd.read_csv('data/train.csv')
 X = data.drop(columns=["PassengerId", "Survived", "Name", "SibSp", "Parch", "Ticket", "Fare", "Cabin", "Embarked"])
 y = data["Survived"]
